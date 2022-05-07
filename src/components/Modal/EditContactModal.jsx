@@ -14,11 +14,7 @@ export default function EditContactModal({ hide, onSubmit, contactId }) {
         </Modal.Header>
         <Modal.Body>
           {data && (
-            <Form
-              onSubmit={onSubmit}
-              toggleModal={hide}
-              initialValues={{ ...data }}
-            >
+            <Form onSubmit={onSubmit} toggleModal={hide} initialValues={data}>
               <ButtonModal variant="secondary" onClick={hide}>
                 Close
               </ButtonModal>

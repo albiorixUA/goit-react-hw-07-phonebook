@@ -41,7 +41,7 @@ export default function Form({
 
   return (
     <Formik
-      initialValues={defaultInitialValues && initialValues}
+      initialValues={initialValues ?? defaultInitialValues}
       onSubmit={handleSubmit}
       validationSchema={schema}
     >
